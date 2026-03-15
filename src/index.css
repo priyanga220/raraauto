@@ -7,7 +7,7 @@
   --radius: 8px;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
-  --hero-header-height: 280px;
+  --hero-header-height: 180px;
   --hero-header-height-mobile: 200px;
 }
 
