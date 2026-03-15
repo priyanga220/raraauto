@@ -23,7 +23,7 @@ export default function PageHeader({ title, breadcrumbs = [] }) {
     >
       <div className="container-fluid page-header-inner py-5">
         <Container className="text-center">
-          <h1 className="display-3 text-white mb-3">{title}</h1>
+          <h1 className="page-header-title text-white mb-3 mb-md-4">{title}</h1>
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb justify-content-center text-uppercase mb-0">
               <li className="breadcrumb-item">

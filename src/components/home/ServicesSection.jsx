@@ -31,7 +31,7 @@ export default function ServicesSection() {
             </div>
           </Col>
           <Col lg={8}>
-            <div className="bg-light p-4 rounded" style={{ minHeight: '320px' }}>
+            <div className="bg-light p-4 rounded services-content-box">
               <h3 className="mb-3">Pioneering unique approaches that distinguish us from the competition.</h3>
               <p><i className="fa fa-check text-success me-3" />Double Down Chassis</p>
               <p><i className="fa fa-check text-success me-3" />Fix Crane</p>

@@ -32,6 +32,7 @@ export default function Navbar() {
             </NavDropdown>
             */}
             <Nav.Link as={NavLink} to="/contact" className="nav-link">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/booking" className="nav-link d-lg-none py-3">Get A Quote</Nav.Link>
           </Nav>
           <Link to="/booking" className="btn btn-primary navbar-quote-btn d-none d-lg-flex align-items-center ms-lg-3">
             Get A Quote <i className="fa fa-arrow-right ms-3" />

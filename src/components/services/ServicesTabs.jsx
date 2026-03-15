@@ -37,7 +37,7 @@ export default function ServicesTabs() {
                 {tabs.map((t) => (
                   <Tab.Pane key={t.key} eventKey={t.key}>
                     <Row className="g-4">
-                      <Col md={6} style={{ minHeight: 350 }}>
+                      <Col md={6} className="service-tab-image-col">
                         <div className="position-relative h-100 rounded overflow-hidden">
                           <img className="position-absolute img-fluid w-100 h-100" src={t.img} style={{ objectFit: 'cover' }} alt="" />
                         </div>

@@ -17,7 +17,7 @@ export default function OurWorkCarousel() {
         <Carousel indicators interval={5000} className="testimonial-carousel">
           {items.map((item, i) => (
             <Carousel.Item key={i}>
-              <div className="testimonial-card bg-light text-center p-4 mx-auto rounded" style={{ maxWidth: 340 }}>
+              <div className="testimonial-card bg-light text-center p-4 mx-auto rounded">
                 <img className="rounded-circle mb-3 bg-white p-2" src={item.img} alt="" style={{ width: 80, height: 80, objectFit: 'cover' }} />
                 <h5 className="mb-1">{item.title}</h5>
                 <p className="mb-0 small text-muted">{item.text}</p>

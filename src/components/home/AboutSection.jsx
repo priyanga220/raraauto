@@ -12,7 +12,7 @@ export default function AboutSection() {
     <div className="container-xxl py-5">
       <Container>
         <Row className="g-5">
-          <Col lg={6} className="pt-4" style={{ minHeight: '400px' }}>
+          <Col lg={6} className="pt-4 about-section-image-col">
             <div className="position-relative h-100 rounded overflow-hidden" style={{ borderRadius: 'var(--radius)' }}>
               <img className="position-absolute img-fluid w-100 h-100" src="/imgs/img10.jpeg" style={{ objectFit: 'cover' }} alt="" />
               <div className="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style={{ background: 'rgba(0, 0, 0, 0.08)' }}>
