@@ -206,4 +206,4 @@ Existing `css/style.css` will be migrated into `src/index.css` (and optionally `
 - Same color theme and overall design, with the enhancements above for a more modern, sleek look and better UX.
 - README with: `npm install`, `npm run dev`, `npm run build`, and how to set form endpoints (Formspree/Netlify) if used.
 
-If you confirm this plan, next step is **execute**: create the Vite React app in the repo and implement the structure and pages as above, then wire forms and gallery to the fixed data/config.
+If you confirm this plan, next step is **execute**: create the Vite React app in the repo and implement the structure and pages as above, then wire forms and gallery to the fixed data/config..
