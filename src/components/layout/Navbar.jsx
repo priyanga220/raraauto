@@ -24,11 +24,13 @@ export default function Navbar() {
             <Nav.Link as={NavLink} to="/" end className="nav-link">Home</Nav.Link>
             <Nav.Link as={NavLink} to="/about" className="nav-link">About</Nav.Link>
             <Nav.Link as={NavLink} to="/services" className="nav-link">Services</Nav.Link>
+            {/*
             <NavDropdown title="Pages" id="pages-dropdown" align="end">
               <NavDropdown.Item as={Link} to="/readmore">Read More</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/booking">Booking</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/gallery">Gallery</NavDropdown.Item>
             </NavDropdown>
+            */}
             <Nav.Link as={NavLink} to="/contact" className="nav-link">Contact</Nav.Link>
           </Nav>
           <Link to="/booking" className="btn btn-primary navbar-quote-btn d-none d-lg-flex align-items-center ms-lg-3">

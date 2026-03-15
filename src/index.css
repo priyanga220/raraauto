@@ -7,6 +7,8 @@
   --radius: 8px;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --hero-header-height: 280px;
+  --hero-header-height-mobile: 200px;
 }
 
 /* Bootstrap theme overrides */
@@ -232,13 +234,26 @@ h1, h2, h3, h4, h5, h6 {
   flex-shrink: 0;
 }
 
-/* Page header / breadcrumb */
+/* Page header / breadcrumb – same height as hero carousel */
 .page-header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: var(--hero-header-height);
+  display: flex;
+  align-items: center;
 }
-.page-header-inner { background: rgba(0, 0, 0, 0.7); }
+.page-header-inner {
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  min-height: var(--hero-header-height);
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991.98px) {
+  .page-header { min-height: var(--hero-header-height-mobile); }
+  .page-header-inner { min-height: var(--hero-header-height-mobile); }
+}
 .breadcrumb-item + .breadcrumb-item::before { color: var(--light); }
 
 /* Carousel (generic) */
@@ -254,13 +269,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .carousel-control-prev-icon, .carousel-control-next-icon { width: 3rem; height: 3rem; }
 
-/* Hero carousel: reduced height, image fits to width, all slides same height */
+/* Hero carousel: same height as page header, image fits to width */
 .hero-carousel {
   overflow: hidden;
 }
 .hero-carousel-inner .carousel-item {
-  height: 320px;
-  min-height: 240px;
+  height: var(--hero-header-height);
+  min-height: var(--hero-header-height);
   background: #000;
   display: flex;
   align-items: center;
@@ -269,13 +284,13 @@ h1, h2, h3, h4, h5, h6 {
 .hero-carousel-inner .carousel-item img.hero-carousel-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 @media (max-width: 991.98px) {
   .hero-carousel-inner .carousel-item {
-    height: 220px;
-    min-height: 180px;
+    height: var(--hero-header-height-mobile);
+    min-height: var(--hero-header-height-mobile);
   }
 }
 .hero-carousel-inner.carousel-fade .carousel-item {

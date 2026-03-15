@@ -3,8 +3,8 @@ import { Carousel } from 'react-bootstrap'
 const slides = [
   { src: '/imgs/banner10.png', alt: 'RARA Auto - Truck body and repair services' },
   { src: '/imgs/banner11.png', alt: 'RARA Auto - Automotive expertise' },
-  { src: '/imgs/img10.jpeg', alt: 'RARA Auto - Our work' },
-  { src: '/imgs/img3.jpeg', alt: 'RARA Auto - Services' },
+ /* { src: '/imgs/img10.jpeg', alt: 'RARA Auto - Our work' },
+  { src: '/imgs/img3.jpeg', alt: 'RARA Auto - Services' }, */
 ]
 
 export default function HeroCarousel() {
